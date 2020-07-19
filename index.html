@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{value}}</h1>
+        <button>click</button>
+    </div>
+</body>
+<script  type="module" src="./index.js"></script>
+<script>
+
+    let btm = document.querySelector('button');
+    btm.onclick = function(){
+        console.log(vm)
+        vm.value++
+    }
+    // let obj = {};
+    // Object.defineProperty(obj,'age',{
+    //     get(val){
+    //         console.log(val)
+    //         return 111
+    //     },
+    //     set(val){
+    //         console.log("我执行了"+val)
+    //     },
+    // })
+    // obj.age = 3;
+    // console.log( obj.age)
+</script>
+</html>
